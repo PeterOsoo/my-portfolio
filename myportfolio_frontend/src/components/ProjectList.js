@@ -5,9 +5,11 @@ const ProjectsList = () => {
 	const [projects, setProjects] = useState([])
 
 	useEffect(() => {
+		console.log("Fetching projects...")
 		axios
 			.get("http://localhost:8000/api/projects/")
 			.then(response => {
+				console.log("Projects data:", response.data)
 				setProjects(response.data)
 			})
 			.catch(error => {
@@ -18,9 +20,13 @@ const ProjectsList = () => {
 	return (
 		<div>
 			<h1>Projects</h1>
+			<p>Lists....</p>
 			<ul>
 				{projects.map(project => (
-					<li key={project.id}>{project.title}</li>
+					<li key={project.id}>
+						<h2>{project.title}</h2>
+						<p>{project.description}</p>
+					</li>
 				))}
 			</ul>
 		</div>
