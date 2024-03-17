@@ -20,7 +20,6 @@ const ProjectsList = () => {
 	return (
 		<div>
 			<h1>Projects</h1>
-			<p>Lists....</p>
 			<ul>
 				{projects.map(project => (
 					<li key={project.id}>
