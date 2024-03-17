@@ -24,7 +24,9 @@ const ProjectsList = () => {
 			<ul>
 				{projects.map(project => (
 					<li key={project.id}>
-						<h2>{project.title}</h2>
+						<h3>
+							<span>{project.id}. </span> {project.title}
+						</h3>
 						<p>{project.description}</p>
 					</li>
 				))}
