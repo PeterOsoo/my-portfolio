@@ -1,0 +1,18 @@
+import { BrowserRouter as Router, Route } from "react-router-dom"
+import IntroSection from "./IntroSection"
+import ProjectList from "./ProjectList"
+
+const Container = () => {
+	return (
+		// <Router>
+		// 	<Route exact path="/" component={IntroSection} />
+		// 	<Route path="/projects" component={ProjectList} />
+		// </Router>
+		<div>
+			<IntroSection />
+			<ProjectList />
+		</div>
+	)
+}
+
+export default Container
