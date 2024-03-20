@@ -4,10 +4,13 @@ import HomePage from "./pages/HomePage"
 import ProjectsPage from "./pages/ProjectsPage"
 import NoPage from "./pages/NoPage"
 
+import Navbar from "./components/Navbar"
+
 const App = () => {
 	return (
 		<div>
 			<Router>
+				<Navbar />
 				<Routes>
 					<Route path="/" exact element={<HomePage />} />
 
