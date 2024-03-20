@@ -1,34 +1,54 @@
-import { Link } from "react-router-dom"
+import { useState } from "react"
+import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
+	const [collapsed, setCollapsed] = useState(true)
+
+	const toggleNavbar = () => {
+		setCollapsed(!collapsed)
+	}
+
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div className="container">
-				<Link className="navbar-brand" to="/">
+				<NavLink className="navbar-brand" to="/">
 					My Portfolio
-				</Link>
+				</NavLink>
 				<button
 					className="navbar-toggler"
 					type="button"
-					data-toggle="collapse"
-					data-target="#navbarNav"
+					onClick={toggleNavbar}
 					aria-controls="navbarNav"
-					aria-expanded="false"
+					aria-expanded={!collapsed ? "true" : "false"}
 					aria-label="Toggle navigation"
 				>
 					<span className="navbar-toggler-icon"></span>
 				</button>
-				<div className="collapse navbar-collapse" id="navbarNav">
+				<div
+					className={`collapse navbar-collapse ${collapsed ? "" : "show"}`}
+					id="navbarNav"
+				>
 					<ul className="navbar-nav ml-auto">
 						<li className="nav-item">
-							<Link className="nav-link" to="/">
+							<NavLink
+								exact
+								className="nav-link"
+								activeClassName="active"
+								to="/"
+								onClick={toggleNavbar}
+							>
 								Home
-							</Link>
+							</NavLink>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/projects">
+							<NavLink
+								className="nav-link"
+								activeClassName="active"
+								to="/projects"
+								onClick={toggleNavbar}
+							>
 								Projects
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 				</div>
