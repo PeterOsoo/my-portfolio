@@ -8,9 +8,9 @@ const IntroSection = () => {
 					<div className="col-lg-8 mx-auto text-center">
 						<h2 className="display-4">About Me</h2>
 						<p className="lead mb-4">
-							Hello! I'm Peter Osoo, a passionate developer specializing in
-							React and Django. With over three years of experience as a
-							self-taught developer, I've honed my skills in building robust web
+							Hello! I'm Peter, a passionate developer specializing in React and
+							Django. With over three years of experience as a self-taught
+							developer, I've honed my skills in building robust web
 							applications. I'm particularly interested in project management
 							and enjoy working on finance apps that empower users to manage
 							their finances effectively.
