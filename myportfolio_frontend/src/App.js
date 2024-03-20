@@ -1,12 +1,9 @@
-import React from "react"
-import ProjectsList from "./components/ProjectList"
-import IntroSection from "./components/Intro"
+import Container from "./components/Container"
 
 const App = () => {
 	return (
 		<div>
-			<IntroSection />
-			<ProjectsList />
+			<Container />
 		</div>
 	)
 }
