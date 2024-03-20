@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const IntroSection = () => {
 	return (
 		<section className="bg-light py-5">
@@ -19,9 +21,9 @@ const IntroSection = () => {
 							also have a keen interest in film production and graphics design,
 							exploring the creative aspects of visual storytelling.
 						</p>
-						<a href="#" className="btn btn-primary btn-lg">
-							View Projects{" "}
-						</a>
+						<Link to="/projects" className="btn btn-primary btn-lg">
+							View Projects
+						</Link>
 					</div>
 				</div>
 			</div>
