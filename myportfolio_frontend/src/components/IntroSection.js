@@ -21,7 +21,7 @@ const IntroSection = () => {
 							also have a keen interest in film production and graphics design,
 							exploring the creative aspects of visual storytelling.
 						</p>
-						<Link to="/projects" className="btn btn-primary btn-lg">
+						<Link to="/projects" className="btn btn-primary btn-lg bg-dark">
 							View Projects
 						</Link>
 					</div>
