@@ -50,6 +50,16 @@ const Navbar = () => {
 								Projects
 							</NavLink>
 						</li>
+						<li className="nav-item">
+							<NavLink
+								className="nav-link"
+								activeClassName="active"
+								to="/contact"
+								onClick={toggleNavbar}
+							>
+								Contact
+							</NavLink>
+						</li>
 					</ul>
 				</div>
 			</div>
