@@ -31,9 +31,8 @@ const Navbar = () => {
 					<ul className="navbar-nav ml-auto">
 						<li className="nav-item">
 							<NavLink
-								exact
+								exact="true"
 								className="nav-link"
-								activeClassName="active"
 								to="/"
 								onClick={toggleNavbar}
 							>
@@ -43,7 +42,6 @@ const Navbar = () => {
 						<li className="nav-item">
 							<NavLink
 								className="nav-link"
-								activeClassName="active"
 								to="/projects"
 								onClick={toggleNavbar}
 							>
@@ -53,7 +51,6 @@ const Navbar = () => {
 						<li className="nav-item">
 							<NavLink
 								className="nav-link"
-								activeClassName="active"
 								to="/contact"
 								onClick={toggleNavbar}
 							>
