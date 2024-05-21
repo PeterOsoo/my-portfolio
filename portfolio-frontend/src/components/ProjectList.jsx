@@ -4,10 +4,12 @@ import axios from "axios"
 const ProjectsList = () => {
 	const [projects, setProjects] = useState([])
 
+	const url = "http://localhost:8000/api/projects/"
+
 	useEffect(() => {
 		console.log("Fetching projects...")
 		axios
-			.get("http://localhost:8000/api/projects/")
+			.get(url)
 			.then(response => {
 				console.log("Projects data:", response.data)
 				setProjects(response.data)
